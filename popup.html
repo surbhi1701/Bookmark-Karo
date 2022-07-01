@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bookmark Karo</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link href="popup.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="modal-header" id="heading">
+    <span class="user-greeting" id="user"></span>, Bookmark Karo
+  </div>
+  <div class="modal-content">
+    <textarea name="context field" rows="3" class="context-input" id="context" value="" placeholder="Type something..."></textarea>
+    <p class="save-cred hide" id="save-credential-warning">
+      Credentials not saved, please click the button to save credentials and login.
+    </p>
+    <button class="save-btn" id="save-button">
+      Save As Bookmark
+    </button>
+    <p class="error-txt" id="error-text"></p>
+    <p class="register-text" >Not you? <span class="register-link" id="user-register">Change credentials</span> </p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

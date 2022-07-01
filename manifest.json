@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+
+  "name": "Bookmark Karo",
+  "description": "Save bookmark with context",
+  "version": "1.0.0",
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "icons": { 
+    "128": "book.svg" 
+  },
+  
+  "action": {
+    "default_icon": "book.svg",
+    "default_popup": "popup.html"
+  },
+  
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+
+  "permissions": [
+    "activeTab", 
+    "cookies", 
+    "scripting", 
+    "notifications", 
+    "storage"
+  ],
+  
+  "host_permissions": [
+    "http://*/*", 
+    "https://*/*"
+  ]
+
+}
